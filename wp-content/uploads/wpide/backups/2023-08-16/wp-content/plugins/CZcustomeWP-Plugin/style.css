@@ -1,0 +1,561 @@
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --grey: #6E7780;
+    --blue: #017DE8;
+    --black: #0D1D2C;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 78px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--grey);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.btn_blue{
+    display: inline-block;
+    padding: 9px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background: var(--3-d-brand-primary-base, linear-gradient(135deg, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #017DE8);
+    background-blend-mode: soft-light, normal;
+    color: var(--white);
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+.btn_blue:hover{
+    background: var(--3-d-brand-primary-20, linear-gradient(135deg, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #0164BA);
+    background-blend-mode: soft-light, normal;
+    transition: 0.5s ease;
+}
+
+.btn_dark{
+     display: inline-block;
+    padding: 9px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background: #192837;
+    border: 1px solid #192837;
+    color: var(--white);
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+.btn_dark:hover{
+    background: #253441;
+    transition: 0.5s ease;
+}
+
+.btn_light{
+    display: inline-block;
+    padding: 9px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background: #ECEDEE;
+    border: 1px solid #ECEDEE;
+    color: var(--black);
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+.btn_light:hover{
+  background: #E0E2E4;
+  transition: 0.5s ease;
+}
+
+.ct-section-inner-wrap{
+    max-width: 1600px !important;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ct-new-columns > .ct-div-block{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section_title{
+    width: 100%;
+    text-align: center;
+}
+
+.ct-shortcode{
+    width: 100%;
+}
+
+
+/*==============================================================================================*/
+/*                        banner sec css start */
+/*==============================================================================================*/
+.section_banner{
+    height: 100vh;
+    color: var(--white);
+}
+
+.section_banner .ct-new-columns{
+    justify-content: flex-start;
+}
+
+.section_banner .banner_text{
+    max-width: 670px;
+    padding-top: 100px;
+}
+
+.section_banner .banner_btns{
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+table{
+    width: 100%;
+}
+
+/*==============================================================================================*/
+/*                        banner sec css end */
+/*==============================================================================================*/
+
+/*==============================================================================================*/
+/*                        pricing sec css start */
+/*==============================================================================================*/
+.section_pricing_table .ct-section-inner-wrap{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.section_pricing_table .section_title{
+    margin-bottom: 50px;
+}
+
+.section_pricing_table .tab_wrap_div{
+    width: 100%;
+}
+
+.section_pricing_table .oxy-tabs-wrapper{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.section_pricing_table .oxy-tabs-wrapper .oxy-tab{
+    padding: 12px 16px;
+    border-bottom: 2px solid #E7E8EA;
+    color: var(--grey);
+    font-weight: 700;
+}
+
+.section_pricing_table .oxy-tabs-wrapper .oxy-tab.tabs-9078-tab-active{
+    border-color: var(--blue);
+    color: var(--black);
+}
+
+.section_pricing_table .oxy-tab-content{
+    padding-top: 0;
+    padding-bottom: 10px;
+    overflow: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section_pricing_table table tr th,
+.section_pricing_table table tr td{
+   border-bottom: 1px solid #E7E8EA;
+   padding: 16px 24px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.section_pricing_table .tab_wrap_div a{
+    margin: 50px auto 0;
+}
+
+.section_pricing_table table tr td:first-child,
+.section_pricing_table table tr th:first-child{
+    position: sticky;
+    left: 0;
+    min-width: 190px;
+    background: var(--white);
+    z-index: 9;
+}
+
+/*==============================================================================================*/
+/*                        pricing sec css end */
+/*==============================================================================================*/
+
+/*==============================================================================================*/
+/*                        boxes sec css start */
+/*==============================================================================================*/
+.section_boxes{
+    padding: 80px 0;
+    background: #F8F8F9;
+}
+
+.section_boxes .section_3_heading_wrapper p{
+    max-width: 620px;
+    margin: 24px auto 0;
+    text-align: center;
+}
+
+.box_wrapper .ct-div-block{
+    padding: 48px 24px;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.box_wrapper .ct-div-block img{
+    margin: 0 auto 40px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.box_wrapper .ct-div-block h4{
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.section_boxes .section_3_boxes_wrapper{
+    margin: 50px 0;
+}
+
+.section_3_btn_wrapper > .ct-div-block{
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*==============================================================================================*/
+/*                        boxes sec css end */
+/*==============================================================================================*/
+
+/*==============================================================================================*/
+/*                        bitcoin sec css start */
+/*==============================================================================================*/
+.section_bitcoin .ct-section-inner-wrap{
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+
+.section_bitcoin .section_4_content_wrapper{
+    width: 40% !important;
+}
+
+.section_4_img_wrapper{
+    justify-content: center;
+}
+
+.section_bitcoin .section_4_content_wrapper .section_title{
+    text-align: start;
+    margin-bottom: 24px;
+}
+
+.section_bitcoin .section_4_content_wrapper > p{
+    margin-bottom: 40px;
+}
+
+.section_bitcoin .icon_box{
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.section_bitcoin .icon_box img{
+    width: 40px;
+}
+
+.section_bitcoin .icon_box .icon_box_content{
+    width: calc(100% - 40px);
+    padding-left: 24px;
+}
+
+/*==============================================================================================*/
+/*                        bitcoin sec css end */
+/*==============================================================================================*/
+
+/*==============================================================================================*/
+/*                        trading sec css start */
+/*==============================================================================================*/
+.section_trading .ct-section-inner-wrap{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    color: var(--white);
+}
+
+.section_trading .ct-new-columns{
+    justify-content: flex-start;
+}
+
+.section_trading .section_5_content_wrapper .section_title{
+    text-align: start;
+    max-width: 510px;
+    margin-bottom: 40px;
+}
+
+/*==============================================================================================*/
+/*                        trading sec css end */
+/*==============================================================================================*/
+
+.sign_up_wrapper {
+    margin-top: 10px;
+}
+
+.sign_up_wrapper a{
+    Display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    gap: 5px
+}
+
+.section_4_img_wrapper{
+    align-items: flex-end;
+}
+
+.wrap_icon_currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/*==============================================================================================*/
+/*                        Responsive css start */
+/*==============================================================================================*/
+
+
+@media (max-width: 1280px){
+    .section_title {
+        font-size: 38px;
+        line-height: 47px;
+    }
+    .section_bitcoin .ct-section-inner-wrap {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    
+    .section_pricing_table table tr th, .section_pricing_table table tr td {
+        padding: 12px 20px;
+    }
+    .section_pricing_table .section_title {
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 991px){
+    
+    .section_pricing_table .ct-section-inner-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+    
+    h1 {
+        font-size: 49px;
+        line-height: 55px;
+    }
+    
+    .section_4_img_wrapper {
+        align-items: center;
+        order: -1;
+    }
+    
+    #new_columns-48-10> .ct-div-block {
+        width: 50% !important;
+    }
+    
+    .section_boxes .section_3_boxes_wrapper {
+        margin: 30px 0;
+    }
+    
+    .box_wrapper .ct-div-block {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media(max-width: 767px){
+    h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    
+    .section_title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+}
+
+@media (max-width: 580px){
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 17px;
+    }
+    
+    #new_columns-48-10> .ct-div-block {
+        width: 100% !important;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .section_title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .section_boxes {
+        padding: 50px 0;    
+    }
+    .section_trading{
+        background-position: bottom;
+    }
+}
+
+@media(max-width: 480px){
+    body {
+    font-size: 16px;
+    line-height: 22px;
+     }
+
+    .banner_text {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    h1 {
+        font-size: 33px;
+        line-height: 41px;
+    }
+    .section_trading .ct-section-inner-wrap {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .section_trading .section_title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .section_pricing_table .oxy-tabs-wrapper {
+       margin-bottom: 29px;
+    }
+    .section_pricing_table table tr th, .section_pricing_table table tr td {
+       padding: 10px;
+    }
+    .section_pricing_table .tab_wrap_div a {
+        margin: 30px auto 0;
+    }   
+    .section_pricing_table .ct-section-inner-wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section_bitcoin .ct-section-inner-wrap {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .section_pricing_table .oxy-tabs-wrapper .oxy-tab{
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    .btn_blue,
+    .btn_dark,
+    .btn_light{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 8px 16px;
+    }
+    .section_pricing_table table tr th, .section_pricing_table table tr td {
+        padding: 12px;
+    }
+    .section_title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
